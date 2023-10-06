@@ -1265,12 +1265,12 @@ section {
   background: rgba(55, 55, 63, 0.04);
 }
 
-.book-a-table .php-email-form {
+.book-a-table .emailform {
   padding: 40px;
 }
 
 @media (max-width: 575px) {
-  .book-a-table .php-email-form {
+  .book-a-table .emailform {
     padding: 20px;
   }
 }
@@ -1477,7 +1477,7 @@ section {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
-.contact .php-email-form .form-group {
+.contact .form-group {
   padding-bottom: 20px;
 }
 
@@ -1657,6 +1657,10 @@ section {
 }
 
 @media (max-width: 640px) {
+  .hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
   .hero h2 {
     font-size: 40px;
     font-weight: 700;

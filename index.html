@@ -16,7 +16,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -289,8 +289,7 @@
   
         </div>
 
-        <form action="forms/contact.php" style="    border-top: 3px solid #135390;
-        border-bottom: 3px solid #135390;" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <form action="https://formspree.io/f/xqkvgjpv" method="post" style="width: 100%;border-top: 3px solid #135390;border-bottom: 3px solid #135390;padding: 30px;background: #fff;box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);">
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -302,12 +301,14 @@
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
           </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+          <div class="text-center">
+            <button style="  background: #bf6632;
+            border: 0;
+            padding: 12px 34px;
+            color: #fff;
+            transition: 0.4s;text-align: center;
+            border-radius: 50px;" type="submit">Send</button>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
         </form><!--End Contact Form -->
 
       </div>
