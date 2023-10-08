@@ -619,6 +619,10 @@ section {
   box-shadow: 0 8px 28px white;
   margin: 20px;
 }
+.services .btn-book-a-table-2:hover {
+  background: var(--color-yellow);
+  box-shadow: 0 8px 28px rgba(0, 18, 18, 0.45);
+}
 
 .services .btn-book-a-table:hover {
   background: var(--color-primary);
