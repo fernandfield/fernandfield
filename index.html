@@ -30,7 +30,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+    <link href="assets/css/edit.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Yummy
@@ -44,321 +45,445 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <img src="assets/img/logo.png"/>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#contact">Join our Ecosystem</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-start section-bg">
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-7 order-1 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h1 data-aos="fade-up">Empowering <span style="color:#dc7726">Innovation</span> through <span style="color:#dc7726">Recycling Education</span></h1>
+  <div style="background-image: url(assets/img/background.jpg);">
+    <section id="topbar" class="topbar d-flex align-items-center" style="background-color: #fff3db00;">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i style="color: black;" class="bi bi-envelope d-flex align-items-center"><a style="color: black;" href="mailto:contact@example.com">hello@rethinkgoodsg.com</a></i>
+          <i style="color: black;" class="bi bi-phone d-flex align-items-center ms-4"><span style="color: black;"> +65 8288 0367</span></i>
         </div>
-        <div class="col-lg-5 order-2 order-lg-2 text-center text-lg-start">
-          <h2 data-aos="fade-up">What we do best</h2>
-          <p data-aos="fade-up" data-aos-delay="100">We leverage our recycling expertise and network to bring accessible recycling technologies and knowledge to end consumers and businesses.</p>
-          <div class="d-flex" style="justify-content: center;" data-aos="fade-up" data-aos-delay="200">
-            <a href="#services" class="btn-book-a-table">Our Services</a>
-          </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a style="color: black;" href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a style="color: black;" href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a style="color: black;" href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a style="color: black;" href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
         </div>
       </div>
-    </div>
-  </section><!-- End Hero Section -->
-
-  <div style="height: 100px;
-  background: url('assets/img/lines.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;" ></div>  
- 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-          <!-- <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-          </div> -->
-          <div class="col-lg-6 d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-4">
-              <h2>
-                Our recycling value chain is complex and long with expertise concentrated in the private sector.
-              </h2>
-              <div class="d-flex justify-content-start" style="flex-direction: column;" data-aos="fade-up" data-aos-delay="200">
-                <img style="width:300px; display: block;
-                margin-left: auto;
-                margin-right: auto;" src="assets/img/shirt.png"/>
-                <h5 style="text-align: center;">
-                  Do you know? <br/> Singapore exports paper and textile waste for recycling.
-                </h5>
-              </div>
-
-            </div>
-          </div>  
-          <div class="col-lg-6 d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-4">
-              <h2>
-                We leverage on small-scale recycling workspaces to conduct <span style="color:#dc7726">recycling end-to-end</span>.
-              </h2>
-              <br/>
-              <h2>This allows us to make <span style="color:#dc7726">any space</span> to be a walking classroom and innovation lab.</h2>
-              <div class="position-relative mt-4">
-              </div>
-            </div>
-          </div>  
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <div style="height: 350px;
-    z-index: -200;
-    margin-top: -130px;
-    background: url('assets/img/line4.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;" ></div>  
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <p>Our <span>Services</span></p>
-        </div>
-
-        <div class="row ">
-          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/why-us.png); background-size: contain; background-repeat: no-repeat;" data-aos="fade-up" data-aos-delay="150">
-          </div>
-          <div class="col-lg-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
-              <h2 style="text-align: center;">
-                Educational workshops
-              </h2>
-              <div class="row" style="text-align: center;">
-                <div class="col-lg-6" style="flex-direction: column;" data-aos="fade-up" data-aos-delay="300">
-                  <a href="https://forms.gle/dnVE91gvxygHtjtD8" target="_blank" class="btn-book-a-table-2">For community</a>
-                  <p>Have us run an educational hands-on workshop on recycling and circularity-linked topics</p>
-                </div>
-                <div class="col-lg-6" style="flex-direction: column;" data-aos="fade-up" data-aos-delay="300">
-                  <a href="https://forms.gle/dnVE91gvxygHtjtD8" target="_blank" class="btn-book-a-table-2"> For corporates</a>
-                  <p>Let us engage your internal and external stakeholders on recycling value chains</p>
-                </div>
-              </div>
-              <div style="text-align: center; margin-top:20px">
-                <h2>Product design co-pilots</h2>
-                <small>In Beta mode!
-                  Be our first partners.</small><br/>
-                <!-- <a href="#services" class="btn-book-a-table">Get started</a> -->
-                <button onclick="openPopup()" class="btn-book-a-table">Get started!</button>
-                <p> There are numerous ways to incorporate recycled materials in your products. Let us matchmake you with preexisting recycling materials to kickstart your your circular journey</p>
+    </section><!-- End Top Bar -->
   
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-    <!-- ======= Why Us Section ======= -->
-    <!-- <section id="why-us" class="why-us section-bg">
-      <div class="section-header">
-        <p>Our <span>Services</span></p>
-      </div>
-      <div class="container" data-aos="fade-up">
-        <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Educational Workshops</h3>
-            </div>
-          </div>
-          <div class="col-lg-8 d-flex align-items-center">
-            <div class="row gy-4">
-
-              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
-                <div style="background-color: #FFE9B4;"class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/icon1.png" style="width: 80px;">
-                  <br/>
-                  <h4>For community engagement</h4>
-                  <p>Have us run an educational hands-on workshop on recycling and circularity-linked topics</p>
-                  <div class="text-center">
-                    <a href="#" class="more-btn">Learn More</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
-                <div style="background-color: #FFE9B4;" class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/icon2.png" style="width: 80px;">
-                  <br/>
-                  <h4>For corporate engagement</h4>
-                  <p>Let us engage your internal and external stakeholders on recycling value chains</p>
-                  <a href="#" class="more-btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-
-      </div>
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Product design co-pilots</h3>
-              <p>In Beta mode! Be our first partners</p>
-            </div>
-          </div>
-          <div class="col-lg-8 align-items-center">
-            <div class="row">
-
-              <div class="col-xl-13" data-aos="fade-up" data-aos-delay="200">
-                <div style="background-color: #FFE9B4;"class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/icon1.png" style="width: 80px;">
-                  <br/>
-                  <h4>Product design co-pilots</h4>
-                  <p>Have us run an educational hands-on workshop on recycling and circularity-linked topics</p>
-                  <div class="text-center">
-                    <a href="#" class="more-btn">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-
-      </div>  
-    </section> -->
-    <!-- End Why Us Section -->
-
-    <!-- ======= Menu Section ======= -->
-
-    <div style="height: 100px;
-    background: url('assets/img/lines.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;" ></div>  
-   
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <p>Join our <span>Ecosystem</span></p>
-        </div>
-        <div class="row">
-          <p class="offset-xl-2 col-xl-5"><b>Our Vision:</b><br/><br/> 
-            We believe in empowering businesses and consumers with knowledge and workspace to embrace positive change in their everyday lives and operations.
-          </p>
-          <div class="col-xl-5">
-            <p>We are always looking for partners!
-              <ul>
-                <li>Innovative recycling technologies</li>
-                <li>New recycling applications</li>
-                <li>Members interested to join our team</li>
-              </ul>
-            </p>
-          </div>
+    <header id="header" class="header d-flex align-items-center" style="background-color: #fff3db00;">
   
-        </div>
-
-        <form action="https://formspree.io/f/xqkvgjpv" method="post" style="width: 100%;border-top: 3px solid #135390;border-bottom: 3px solid #135390;padding: 30px;background: #fff;box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);">
-          <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="text-center">
-            <button style="  background: #135390;
-            border: 0;
-            padding: 12px 34px;
-            color: #fff;
-            transition: 0.4s;text-align: center;
-            border-radius: 50px;" type="submit">Send</button>
-          </div>
-        </form><!--End Contact Form -->
-
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between" style="background-color: #FFF3DB!IMPORTANT; height: 70px; border-radius: 25px;">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets/img/logo.png">
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a style="color: black;" href="#about">About Us</a></li>
+            <li><a style="color: black;" href="#whatwedo">What we do</a></li>
+            <li><a style="color: black;" href="#joinus">Join Us</a></li>
+            <li><a style="color: black;" href="#contact">Contact Us</a></li>
+          </ul>
+        </nav><!-- .navbar -->
+  
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  
       </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <!-- <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-9 col-md-6 footer-links d-flex">
+    </header><!-- End Header -->
+    <!-- End Header -->
+  
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero" style="background-color: #fff3db00;">
+      <div class="container position-relative">
+        <div class="row gy-5" data-aos="fade-in">
           <div>
-            <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
+            <h2 style="color: black;">Welcome to <span style="color: black;">RTG</span></h2>
+            <p style="color: black;">rethinkg somthing something somethin jiefhreivheivhefhviehfviehvrevirhvg </p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a style="color: black; background-color: #FFE9B4!important;" href="#about" class="btn-get-started">Get Started</a>
+            </div>
           </div>
         </div>
-
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
+      </div>
+  
+      <div class="icon-boxes position-relative">
+        <div class="container position-relative" >
+            <div class="row gy-4 mt-5 justify-content-center">
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
+                                </td>
+                                <td>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">The Glass Project</a></h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--End Icon Box -->
+  
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
+                                </td>
+                                <td>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">The Plastic Project</a></h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--End Icon Box -->
+  
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
+                                </td>
+                                <td>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">The SpineryG Project</a></h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--End Icon Box -->
+  
+            </div>
         </div>
-
-      </div>
-    </div> -->
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Rethink Good</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
     </div>
-
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+  
+      </div>
+    </section>
+    <!-- End Hero Section -->
+  </div>
+  
+    <main id="main">
+      <!-- ======= Services Section ======= -->
+      <section id="whatwedo" class="services section-bg" style="background-color: white;">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <b style="font-size: 70px;">What we do</b>
+          </div>
+  
+          <div class="row ">
+            <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/why-us.png); background-size: contain; background-repeat: no-repeat;" data-aos="fade-up" data-aos-delay="150">
+            </div>
+            <div class="col-lg-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="content ps-0 ps-lg-1">
+                <div class="vl1"></div>
+                <br>&nbsp;<br>&nbsp;
+                <div class="vl2"></div>
+              </div>
+  
+              <div class="content ps-0 ps-lg-1">
+                <img src="assets/img/chat.JPG">
+                <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+                <img src="assets/img/idea.JPG">
+              </div>
+  
+              <div class="content ps-0 ps-lg-8">
+                <h2 style="text-align: center;">
+                  Educational workshops
+                </h2>
+                <div class="row" style="text-align: center;">
+                  <div class="col-lg-6" style="flex-direction: column;" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://forms.gle/dnVE91gvxygHtjtD8" target="_blank" class="btn-book-a-table-2">For community</a>
+                    <p>Have us run an educational hands-on workshop on recycling and circularity-linked topics</p>
+                  </div>
+                  <div class="col-lg-6" style="flex-direction: column;" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://forms.gle/dnVE91gvxygHtjtD8" target="_blank" class="btn-book-a-table-2"> For corporates</a>
+                    <p>Let us engage your internal and external stakeholders on recycling value chains</p>
+                  </div>
+                </div>
+                <div style="text-align: center; margin-top:20px">
+                  <h2>Product design co-pilots</h2>
+                  <p> There are numerous ways to incorporate recycled materials in your products. Let us matchmake you with preexisting recycling materials to kickstart your your circular journey</p>
+                  <table>
+                    <tr>
+                      <td>
+                        <small>In Beta mode!<br>
+                          Be our first partners.</small><br/>
+                      </td>
+                      <td>
+                        <button onclick="openPopup()" class="btn-book-a-table">Get started!</button>
+                      </td>
+                    </tr>
+                  </table>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
+  x
+  
+      <!-- ======= Stats Counter Section ======= -->
+      <section id="stats-counter" class="stats-counter">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row gy-4 align-items-center">
+  
+            <div class="col-lg-6">
+              <p style="font-size: 40px;">2023</p>
+              <p style="font-size: 40px;">At a Glance</p>
+            </div>
+  
+            <div class="col-lg-6">
+  
+              <div class="stats-item d-flex align-items-center">
+                <span style="color: black;" data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
+              </div><!-- End Stats Item -->
+  
+              <div class="stats-item d-flex align-items-center">
+                <span style="color: black;" data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+              </div><!-- End Stats Item -->
+  
+              <div class="stats-item d-flex align-items-center">
+                <span style="color: black;" data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+              </div><!-- End Stats Item -->
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Stats Counter Section -->
+  
+      <div style="height: 100px;
+      background: url('assets/img/lines.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;" ></div>  
+  
+  
+      <!-- ======= Our Services Section ======= -->
+      <section id="joinus" class="services sections-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>I want to...</h2>
+          </div>
+  
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item  position-relative">
+  
+                  <img src="assets/img/donate.JPG" style="width: 100px; height: 100px;"><br>
+  
+                <h3>Donate</h3>
+                <p>Where to donate good quality clotthing and textiles</p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <img src="assets/img/shop.JPG" style="width: 100px; height: 100px;"><br>
+                <h3>Shop</h3>
+                <p>Attend our next swap eevent, find an opeen wardrobe, or order a curated bag</p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <img src="assets/img/volunteer.JPG" style="width: 100px; height: 100px;"><br>
+                <h3>Volunteer</h3>
+                <p>Volunteer your time to help us combat fashion and textile waste in Singapore</p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <img src="assets/img/Recycle.JPG" style="width: 100px; height: 100px;"><br>
+                <h3>Recycle</h3>
+                <p>Locate our textile recycling bins</p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <img src="assets/img/collaborate.JPG" style="width: 100px; height: 100px;"><br>
+                <h3>Collaborate</h3>
+                <p>Reach out to us if you want to run a circular fashion outreach/event</p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <img src="assets/img/learn.JPG" style="width: 100px; height: 100px;"><br>
+                <h3>Learn</h3>
+                <p>Still have questions? Vist our FAQ or contact us</p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Our Services Section -->
+  
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <!-- <div class="section-header">
+            <h2>Contact</h2>
+            <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+          </div> -->
+  
+          <div class="row gx-lg-0 gy-4"  style="color: #ffe9b400!important;">
+  
+            <div class="col-lg-4">
+  
+              <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                <h1 style="color: black; float: left;">RTG</h1>
+                <div class="info-item d-flex" style="background-color: #f6d36b00;">
+                  <i style="background-color: #F6D46B; color: black;" class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4  style="color: black;">Location:</h4>
+                    <p style="color: black;">A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex"  style="background-color: #f6d36b00;">
+                  <i style="background-color: #F6D46B; color: black;" class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4 style="color: black;">Email:</h4>
+                    <p style="color: black;">info@example.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex"  style="background-color: #f6d36b00;">
+                  <i style="background-color: #F6D46B; color: black;" class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4 style="color: black;">Call:</h4>
+                    <p  style="color: black;">+1 5589 55488 55</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex"  style="background-color: #f6d36b00;">
+                  <i style="background-color: #F6D46B; color: black;" class="bi bi-clock flex-shrink-0"></i>
+                  <div>
+                    <h4 style="color: black;">Open Hours:</h4>
+                    <p style="color: black;">Mon-Sat: 11AM - 23PM</p>
+                  </div>
+                </div><!-- End Info Item -->
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-8">
+              <form action="https://formspree.io/f/xqkvgjpv" method="post" role="form" class="php-email-form1" style="background-color: #F6D46B!important;">
+                <div class="row">
+                  <center>
+                    <h2 style="color: black;"><b>SEND US AN ENQUIRY</b></h2><br>
+                  </center>
+                  
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button style="background-color: #FFF3DB; color: black;" type="submit">Send Message</button></div>
+              </form>
+            </div><!-- End Contact Form -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+  
+    </main><!-- End #main -->
+  
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.855030636003!2d103.934504!3d1.3482371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d6ba1d26d9f%3A0x96e54e2d0d8c8879!2sLabula%20Mala%20Xiang%20Guo%20(Tampines%20West)!5e0!3m2!1sen!2ssg!4v1705503942284!5m2!1sen!2ssg" 
+  width="100%" height="600px" 
+  style="border:0; position: relative; z-index: 1; margin-bottom: -220px;"
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer" style="border-top-left-radius: 50%; padding-top: 150px; border-top-right-radius: 50%;z-index: 3;position: relative;">
+  
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>RTG</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Site Map</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#whatwedo">What we do</a></li>
+              <li><a href="#joinus">Join Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+  
+  
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong>  +65 8288 0367<br>
+              <strong>Email:</strong> hello@rethinkgoodsg.com<br>
+            </p>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>RTG</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+  
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

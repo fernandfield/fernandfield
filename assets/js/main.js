@@ -18,16 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Sticky header on scroll
-   */
-  const selectHeader = document.querySelector('#header');
-  if (selectHeader) {
-    document.addEventListener('scroll', () => {
-      window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
-    });
+/**
+ * Sticky Header on Scroll
+ */
+const selectHeader = document.querySelector('#header');
+if (selectHeader) {
+  let headerOffset = selectHeader.offsetTop;
+  let nextElement = selectHeader.nextElementSibling;
+
+  const headerFixed = () => {
+    if ((headerOffset - window.scrollY) <= 0) {
+      selectHeader.classList.add('sticked');
+      selectHeader.style.backgroundColor = "#FFF3DB";
+      if (nextElement) nextElement.classList.add('sticked-header-offset');
+    } else {
+      selectHeader.classList.remove('sticked');
+      selectHeader.style.backgroundColor = "#fff3db00"; // Reset background color
+      if (nextElement) nextElement.classList.remove('sticked-header-offset');
+    }
   }
 
+  window.addEventListener('load', headerFixed);
+  document.addEventListener('scroll', headerFixed);
+}
   /**
    * Navbar links active state on scroll
    */
