@@ -31,7 +31,8 @@
 
   <!-- Template Main CSS File -->
   <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
-    <link href="assets/css/edit.css" rel="stylesheet">
+  <link href="assets/css/edit.css" rel="stylesheet">
+  <link href="assets/css/slideshow.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Yummy
@@ -100,8 +101,11 @@
       </div>
   
       <div class="icon-boxes position-relative">
-        <div class="container position-relative" style="width: 6000px;">
-            <div class="row gy-4 mt-5 justify-content-center">
+        <div class="container position-relative">
+
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="row gy-4 mt-5 justify-content-center">
                 <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box">
                         <table>
@@ -140,14 +144,72 @@
                                     <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
                                 </td>
                                 <td>
-                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">The SpineryG Project</a></h4>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">Sustainable Fashion</a></h4>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div><!--End Icon Box -->
   
+              </div>
             </div>
+          
+            <div class="mySlides">
+              <div class="row gy-4 mt-5 justify-content-center">
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
+                                </td>
+                                <td>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">Spinergy</a></h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--End Icon Box -->
+  
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
+                                </td>
+                                <td>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">The Good Co.</a></h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--End Icon Box -->
+  
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="icon"><i style="color: black;" class="bi bi-gem"></i></div>
+                                </td>
+                                <td>
+                                    <h4 class="title"><a style="color: black;" href="" class="stretched-link">Sustainable Design Studio</a></h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--End Icon Box -->
+  
+              </div>
+            </div>
+          
+              
+            <a style="color: black;" class="prev" onclick="plusSlides(-1)">❮</a>
+            <a style="color: black;" class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+
         </div>
     </div>
   
@@ -526,6 +588,31 @@ var openPopup = function() {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+    </script>
+  
 
 </body>
 
