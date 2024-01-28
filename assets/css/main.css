@@ -1032,11 +1032,11 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #fff3db;;
 }
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
 }
@@ -1044,7 +1044,7 @@ section {
 .breadcrumbs h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #fff;
+  color: black
   font-family: var(--font-secondary);
 }
 
@@ -1056,11 +1056,11 @@ section {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-primary);
+  color: black;
 }
 
 .breadcrumbs ol a {
-  color: rgba(255, 255, 255, 0.8);
+  color: black;
   transition: 0.3s;
 }
 
@@ -1075,7 +1075,6 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #fff;
   content: "/";
 }
 
