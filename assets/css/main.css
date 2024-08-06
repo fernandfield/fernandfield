@@ -70,7 +70,7 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .section-header h2 {
@@ -1165,10 +1165,6 @@ section {
   position: absolute;
   inset: 0;
   background: rgba(white, 0.8);
-}
-
-.testimonials-section .section-header {
-  margin-bottom: 40px;
 }
 
 .testimonials-section .testimonials-carousel,
